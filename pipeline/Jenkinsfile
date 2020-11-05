@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages { 
+        stage('Iniciando Construcao') {
+            steps {
+                evaluate(new File("${WORKSPACE}/pipeline/pipeline1.groovy"))
+            }
+        }
+    }
+}
