@@ -3,7 +3,7 @@ pipeline {
     stages { 
         stage('Iniciando Construcao') {
             steps {
-                evaluate(new File("${WORKSPACE}/pipeline/pipeline1.groovy"))
+                evaluate(new File("${WORKSPACE}/pipeline/pipeline2.groovy"))
             }
         }
     }
